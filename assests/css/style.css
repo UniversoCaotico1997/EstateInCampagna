@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --color-primary: #a26d4b;
+    /* legno rustico */
+    --color-bg: #f2e0c8;
+    /* sfondo chiaro */
+    --color-accent: #b87c5d;
+    /* accento caldo */
+    --color-text: #3d3b39;
+    /* testo elegante */
+    --color-neutral: #dbc3a3;
+    /* sfumature neutre */
+}
+
+body {
+    font-family: "Merriweather Sans", sans-serif !important;
+    background-color: var(--color-bg) !important;
+}
+
+Header>div {
+    background: linear-gradient(rgba(25, 15, 5, 0.5), rgba(20, 12, 4, 0.5)), url(../img/salone.jpg);
+    background-size: cover;
+}
+
+.custom_text {
+    color: var(--color-neutral);
+    font-size: 70px;
+
+}
+
+h2 p {
+    color: var(--color-text);
+}
