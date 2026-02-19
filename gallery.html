@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Estate In Campagna</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assests/css/gallery.css">
+    <script src="./assests/js/gallery.js" defer></script>
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="house.html">The House</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <!-- <li><a href="rustica-toscana.html#activities">Activities</a></li> -->
+            <li><a href="rustica-toscana.html#contact">Contact</a></li>
+        </ul>
+        <a href="https://airbnb.com/h/estate-in-campagna" class="book-btn">Prenota Ora</a>
+    </nav>
+
+    <!-- Gallery Header -->
+    <section class="gallery-header">
+        <h1>GALLERY</h1>
+        <p>Scopri la bellezza di Estate In Campagna attraverso la nostra collezione curata</p>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Tutte le Foto</button>
+            <button class="filter-btn" data-filter="exterior">Esterni</button>
+            <button class="filter-btn" data-filter="interior">Interni</button>
+            <button class="filter-btn" data-filter="pool">Giardino</button>
+            <!-- <button class="filter-btn" data-filter="views">Vista</button> -->
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-container">
+        <div class="gallery-grid" id="galleryGrid">
+            <!-- Exterior Images -->
+            <div class="gallery-item" data-category="exterior">
+                <div class="placeholder-img">
+                    Facciata Principale
+                    <span>Esterno di casa in pietra</span>
+                </div>
+                <div class="gallery-overlay">
+                    <h3>Facciata Principale</h3>
+                    <p>Tradizionale architettura in pietra Siciliana</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="exterior">
+                <div class="placeholder-img">
+                    Uliveti
+                    <span>Ulivi secolari</span>
+                </div>
+                <div class="gallery-overlay">
+                    <h3>Uliveti</h3>
+                    <p>Circondato da ulivi secolari</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="exterior">
+                <div class="placeholder-img">
+                    Vista al Tramonto
+                    <span>Golden hour</span>
+                </div>
+                <div class="gallery-overlay">
+                    <h3>Vista al Tramonto</h3>
+                    <p>Tramonto Siciliano mozzafiato</p>
+                </div>
+            </div>
+
+            <!-- Interior Images -->
+            <div class="gallery-item" data-category="interior">
+                <div class="placeholder-img">
+                    Salotto
+                    <span>Camino accogliente</span>
+                </div>
+                <div class="gallery-overlay">
+                    <h3>Salotto</h3>
+                    <p>Fascino rustico con comfort moderno</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="interior">
+                <div class="placeholder-img">
+                    Cucina
+                    <span>Autentico stile Siciliano</span>
+                </div>
+                <div class="gallery-overlay">
+                    <h3>Cucina</h3>
+                    <p>Tradizionale cucina completamente attrezzata </p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="interior">
+                <div class="placeholder-img">
+                    Bedroom
+                    <span>Peaceful retreat</span>
+                </div>
+                <div class="gallery-overlay">
+                    <h3>Master Bedroom</h3>
+                    <p>Comfortable and elegant sleeping quarters</p>
+                </div>
+            </div>
+
+            <!-- Pool & Gardens -->
+            <div class="gallery-item" data-category="pool">
+                <div class="placeholder-img">
+                    Swimming Pool
+                    <span>Private infinity pool</span>
+                </div>
+                <div class="gallery-overlay">
+                    <h3>Swimming Pool</h3>
+                    <p>Relax by the infinity pool with panoramic views</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="pool">
+                <div class="placeholder-img">
+                    Garden Terrace
+                    <span>Outdoor dining area</span>
+                </div>
+                <div class="gallery-overlay">
+                    <h3>Garden Terrace</h3>
+                    <p>Perfect for al fresco dining</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="pool">
+                <div class="placeholder-img">
+                    Poolside Lounge
+                    <span>Sun loungers</span>
+                </div>
+                <div class="gallery-overlay">
+                    <h3>Poolside Lounge</h3>
+                    <p>Unwind under the Tuscan sun</p>
+                </div>
+            </div>
+
+            <!-- Views -->
+            <!-- <div class="gallery-item" data-category="views">
+                <div class="placeholder-img">
+                    Rolling Hills
+                    <span>Tuscan landscape</span>
+                </div>
+                <div class="gallery-overlay">
+                    <h3>Rolling Hills</h3>
+                    <p>Iconic Tuscan countryside views</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="views">
+                <div class="placeholder-img">
+                    Morning Mist
+                    <span>Dawn over the valley</span>
+                </div>
+                <div class="gallery-overlay">
+                    <h3>Morning Mist</h3>
+                    <p>Magical mornings in Tuscany</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="views">
+                <div class="placeholder-img">
+                    Vineyard Vista
+                    <span>Wine country</span>
+                </div>
+                <div class="gallery-overlay">
+                    <h3>Vineyard Vista</h3>
+                    <p>Surrounded by renowned vineyards</p>
+                </div>
+            </div>
+        </div> -->
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="closeLightbox">&times;</button>
+            <button class="lightbox-nav lightbox-prev" id="prevImage">&#8249;</button>
+            <img src="" alt="Gallery Image" id="lightboxImage">
+            <button class="lightbox-nav lightbox-next" id="nextImage">&#8250;</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <p>© Estate In Campagna <span>|</span> <a href="#privacy">Privacy Policy.</a></p>
+        </div>
+        <div>
+            <p id="follow">Follow us:</p>
+        </div>
+        <div class="social-links">
+            <a href="#" class="social-icon">f</a>
+            <a href="#" class="social-icon">📷</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
